@@ -10,7 +10,7 @@ function AddUser() {
     const handleAddUser = async () => {
         try {
             const newUser = { name, age: Number(age), email };
-            await axios.post('https://expres-mongo-backend.onrender.com/newUser', newUser);
+            await axios.post('https://mongoback-os71mz32b-jimmya1421s-projects.vercel.app/newUser', newUser);
             setName('');
             setAge('');
             setEmail('');
@@ -22,7 +22,7 @@ function AddUser() {
 
     const fetchUsers = async () => {
         try {
-            const response = await axios.get('https://expres-mongo-backend.onrender.com/users');
+            const response = await axios.get('https://mongoback-os71mz32b-jimmya1421s-projects.vercel.app/users');
             setUsers(response.data);
         } catch (error) {
             console.error('Error fetching users:', error);

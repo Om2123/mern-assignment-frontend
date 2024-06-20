@@ -7,7 +7,7 @@ function SearchUsers() {
 
     const handleSearch = async () => {
         try {
-            const response = await axios.get(`https://expres-mongo-backend.onrender.com/users/search/${name}`);
+            const response = await axios.get(`https://mongoback-os71mz32b-jimmya1421s-projects.vercel.app/users/search/${name}`);
             setUsers(response.data);
         } catch (error) {
             console.error('Error fetching users:', error);
